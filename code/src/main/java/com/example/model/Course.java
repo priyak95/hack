@@ -13,6 +13,8 @@ public class Course {
 
     private String imageUrl;
 
+    private Integer duration;
+
     public Long getCourseId() {
         return courseId;
     }
@@ -59,5 +61,13 @@ public class Course {
 
     public void setImageUrl(String imageUrl) {
         this.imageUrl = imageUrl == null ? null : imageUrl.trim();
+    }
+
+    public Integer getDuration() {
+        return duration;
+    }
+
+    public void setDuration(Integer duration) {
+        this.duration = duration;
     }
 }
