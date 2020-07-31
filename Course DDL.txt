@@ -1,0 +1,10 @@
+CREATE TABLE public.course (
+	course_id int8 NOT NULL,
+	"name" varchar NULL,
+	category varchar NULL,
+	price _float8 NULL,
+	author varchar NULL,
+	image_url varchar NULL,
+	duration int4 NULL,
+	CONSTRAINT course_pk PRIMARY KEY (course_id)
+);
