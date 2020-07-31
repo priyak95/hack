@@ -5,7 +5,7 @@ import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import com.example.model.Course;
+import com.example.demo.model.Course;
 
 @SpringBootApplication
 public class CodeApplication {
