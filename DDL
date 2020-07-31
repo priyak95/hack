@@ -1,0 +1,32 @@
+course 
+
+CREATE TABLE public.course (
+	course_id int8 NOT NULL,
+	name varchar NULL,
+	category varchar NULL,
+	price _float8 NULL,
+	author varchar NULL,
+	image_url varchar NULL,
+	CONSTRAINT course_pk PRIMARY KEY (course_id)
+);
+
+user
+
+CREATE TABLE public.users (
+	user_id int8 NOT NULL,
+	user_name varchar NULL,
+	"password" varchar NULL,
+	purchase int8 NULL,
+	CONSTRAINT users_pk PRIMARY KEY (user_id)
+);
+
+
+progress
+
+CREATE TABLE public.progress (
+	user_id int8 NULL,
+	course_id int8 NULL,
+	status varchar NULL,
+	percentage _int4 NULL,
+	last_update_date timestamp NULL DEFAULT now()
+);
